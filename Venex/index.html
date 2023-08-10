@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/logo.png" type="image/png">
+        <title>Venex</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="sin-puntos">
+                <li><img src="img/trucklogo.png" alt="">Seguí tu compra</li>
+                <li><img src="img/pickuppointlogo.png" alt="">Retirá tu compra</li>
+                <li><img src="img/auricularescentrodeayuda.png" alt="">Centro de ayuda</li>  
+            </ul>
+        </nav>
+        <div class="nav">
+            <img class="logo" src="img/venex.png" alt="">
+            <form>
+                <input type="text" id="consulta" placeholder="Eso que querés.. buscalo acá">
+            </form>
+            <div id="resultados">
+                <!-- Aquí se mostrarán los resultados de la búsqueda -->
+            </div>
+            <a class="link" href="">Bienvenida/o Usuario</a>
+            <div class="container">
+                <a href=""><img src="img/favoritos.png" alt=""></a>
+                <a href=""><img src="img/carrito.png" alt=""></a>
+            </div>
+            
+        </div>
+        <ul class="options">
+            <li><a href="">PCs de Escritorio</a></li>
+            <li><a href="">Notebooks</a></li>
+            <li><a href="">Placas de Video</a></li>
+            <li><a href="">Monitores</a></li>
+            <li><a href="">Micros</a></li>
+            <li><a href="">¡IMPERDIBLES!</a></li>
+            <li><a href="">|  Armá tu PC  |</a></li>
+            <li><a href="" style="padding: 10px 0;"><img src="img/corporation.png" alt="" style="max-width: 148px" ></a></li>
+        </ul>
+
+        <div class="slider-frame">
+            <ul class="slides">
+                <li><img src="img/slide1.jpg" alt=""></li>
+                <li><img src="img/slide2.jpg" alt=""></li>
+                <li><img src="img/slide3.jpg" alt=""></li>
+                <li><img src="img/slide4.jpg" alt=""></li>
+                <li><img src="img/slide5.jpg" alt=""></li>
+                <li><img src="img/slide6.jpg" alt=""></li>
+                <li><img src="img/slide7.jpg" alt=""></li>
+            </ul>
+        </div>
+
+        <script>
+            // Variables globales
+            var slides = document.querySelectorAll('.slider-frame .slides li');
+            var currentSlide = 0;
+            var slideInterval = setInterval(nextSlide, 6000); // Cambia el slide cada 6 segundos
+          
+            // Función para mostrar el siguiente slide
+            function nextSlide() {
+              slides[currentSlide].classList.remove('active');
+              currentSlide = (currentSlide + 1)}
+            // Función para mostrar el siguiente slide
+            function nextSlide() {
+              slides[currentSlide].classList.remove('active');
+              currentSlide = (currentSlide + 1) % slides.length;
+              slides[currentSlide].classList.add('active');
+            }
+        </script>
+        
+        <h2>¡Las mejores marcas están en Venex!</h2>
+        <div class="carrusel-container">
+            <div class="carrusel-marcas">
+              <ul id="marcas-lista">
+                <li><img src="img/marca1.jpg" alt="Marca 1"></li>
+                <li><img src="img/marca2.jpg" alt="Marca 2"></li>
+                <li><img src="img/marca3.jpg" alt="Marca 3"></li>
+                <li><img src="img/marca4.jpg" alt="Marca 4"></li>
+                <li><img src="img/marca5.png" alt="Marca 5"></li>
+                <li><img src="img/marca6.png" alt="Marca 6"></li>
+                <li><img src="img/marca7.jpg" alt="Marca 7"></li>
+                <li><img src="img/marca8.png" alt="Marca 8"></li>
+                <li><img src="img/marca9.png" alt="Marca 9"></li>
+                <li><img src="img/marca10.jpg" alt="Marca 10"></li>
+              </ul>
+            </div>
+        </div>     
+    </body>
+</html>

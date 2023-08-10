@@ -1,0 +1,169 @@
+body {
+    border: 0;
+    margin: 0;
+  }
+  
+  nav {
+    background-color: #2d2d33;
+    padding: 1px;
+    align-items: center;
+    text-align: center;
+    border: 0;
+    margin: 0;
+  }
+  
+  ul.sin-puntos {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: center;
+    color: white;
+  }
+  
+  ul.sin-puntos li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  ul.sin-puntos img {
+    max-width: 26px;
+    max-height: 26px;
+  }
+  
+  div.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #37373f;
+    padding: 1px;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-left: 40px;
+    max-width: 240px;
+    max-height: 180px;
+  }
+  
+  input {
+    width: 15cm;
+    height: 1cm;
+    margin: 0 40px;
+    margin-left: 40px;
+  }
+  
+  .link {
+    color: white;
+    margin: 0 40px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .container {
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  .container img {
+    width: 40px;
+    height: auto;
+    margin-right: 25px;
+    margin-left: 15px;
+  }
+  
+  .options {
+    background-color: #e7e7e7;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .options li {
+    margin-right: 30px;
+  }
+  
+  .options li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .slider-frame {
+    max-width: 100%; /* Ajusta el ancho máximo del contenedor del slider */
+    overflow: hidden;
+  }
+  
+  .slider-frame ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slider-frame li {
+    display: none;
+  }
+  
+  .slider-frame li.active {
+    display: block;
+  }
+  
+  .slider-frame li img {
+    width: 100%; /* Hace que la imagen ocupe el ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+  }
+
+  .carrusel-container {
+    width: 100%;
+    padding: 20px;
+    border: 2cm solid #e7e7e7;
+    border-left: none;
+    border-right: none;
+    background-color: #e7e7e7;
+  }
+
+  .carrusel-marcas {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .carrusel-marcas ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    animation: carousel 15s linear infinite; /* Cambiado a 15 segundos */
+  }
+
+  .carrusel-marcas li {
+    flex: 0 0 20%;
+    margin-right: 20px;
+    display: flex; /* Agregado para centrar las imágenes verticalmente */
+    justify-content: center; /* Agregado para centrar las imágenes horizontalmente */
+  }
+
+  .carrusel-marcas img {
+    max-width: 100%; /* Cambiado a max-width */
+    max-height: 100%; /* Cambiado a max-height */
+    object-fit: contain;
+  }
+
+  @keyframes carousel {
+    0% {
+      transform: translateX(0);
+    }
+    16.666% {
+      transform: translateX(0); /* Imágenes estáticas durante 3 segundos */
+    }
+    20% {
+      transform: translateX(-100%); /* Inicia el desplazamiento */
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
